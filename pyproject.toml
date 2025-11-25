@@ -1,0 +1,61 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "myl-cli"
+version = "0.1.0"
+description = "AI-powered CLI for secure digital identity management"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+keywords = ["cli", "ai", "security", "ssl", "api-keys"]
+authors = [
+  { name = "MyL.zip Team" },
+]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+  "typer[all]>=0.9.0",
+  "rich>=13.7.0",
+  "httpx>=0.25.0",
+  "pydantic>=2.5.0",
+  "pydantic-settings>=2.1.0",
+  "keyring>=24.3.0",
+  "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.4.0",
+  "pytest-asyncio>=0.21.0",
+  "pytest-cov>=4.1.0",
+  "black>=23.12.0",
+  "ruff>=0.1.8",
+  "mypy>=1.7.0",
+]
+
+[project.scripts]
+myl = "myl.cli:app"
+
+[project.urls]
+Homepage = "https://myl.zip"
+Documentation = "https://myl.zip/docs"
+Repository = "https://github.com/myl-cli/myl-cli"
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
