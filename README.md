@@ -12,6 +12,19 @@ MyL CLI is a terminal-based AI assistant that connects to the MyL.zip platform f
 
 **Status**: Early development - Building in public 🚀
 
+## Feature Status
+
+Legend: ✅ Live • 🧪 Beta • 🕒 Coming • ◌ Planned
+
+- ✅ CLI scaffold and repo hygiene (Typer app, MIT license, security docs)
+- 🧪 AI chat command (wire-up to OpenRouter; model switching)
+- 🕒 Secure secret handling (Windows Credential Manager integration)
+- 🕒 MyL.zip platform client (auth + health check)
+- ◌ Real-time analytics (cert/key status)
+- ◌ Zero-knowledge personal journal + memory (encrypted, local-first)
+
+See the public roadmap for details and timelines: [ROADMAP.md](./ROADMAP.md).
+
 ## Features (Planned)
 
 - 🤖 **AI Chat Interface**: Multi-model support via OpenRouter
@@ -47,7 +60,8 @@ myl status
 ## Development
 
 Project is currently in initial setup phase. Follow the development journey:
-- GitHub: [Coming soon - new account being created]
+- GitHub repository: https://github.com/Zeppelone/myl.zip
+- Roadmap: [ROADMAP.md](./ROADMAP.md)
 - Platform: https://myl.zip
 
 ## Security
